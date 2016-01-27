@@ -1,0 +1,12 @@
+create extension pgroonga;
+CREATE EXTENSION
+pgroonga_test=# \dx
+                               List of installed extensions
+   Name   | Version |   Schema   |                      Description                       
+----------+---------+------------+--------------------------------------------------------
+ pgroonga | 1.0.2   | public     | CJK-ready fast full-text search index based on Groonga
+ plpgsql  | 1.0     | pg_catalog | PL/pgSQL procedural language
+(2 rows)
+
+
+grant ALL on SCHEMA pgroonga to user;
